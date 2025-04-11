@@ -1,0 +1,44 @@
+{
+  "faqs": [
+    {
+      "id": "que-es-fluxo",
+      "question": "¿Qué es Fluxo Hola?",
+      "answer": "Fluxo es una plataforma completa de gestión empresarial, diseñada específicamente para pequeños y medianos negocios. Nuestro sistema integra punto de venta, control de inventario, facturación electrónica y herramientas de análisis que te permiten optimizar tus operaciones y tomar mejores decisiones."
+    },
+    {
+      "id": "descuentos",
+      "question": "¿Hay algún descuento?",
+      "answer": "¡Sí! Ofrecemos descuentos especiales para suscripciones anuales, con un ahorro de hasta 20% comparado con los pagos mensuales. También contamos con promociones especiales para nuevos usuarios y para quienes recomiendan nuestro servicio."
+    },
+    {
+      "id": "comisiones",
+      "question": "¿Fluxo cobra comisión por los pedidos?",
+      "answer": "No, Fluxo no cobra comisiones adicionales por transacción. Nuestro modelo de negocio se basa en suscripciones transparentes, donde pagas solo por el plan que elijas, sin costos ocultos ni comisiones por las ventas que realices a través de nuestra plataforma."
+    },
+    {
+      "id": "periodo-prueba",
+      "question": "¿Me cobran al terminar mi período de prueba?",
+      "answer": "No, el período de prueba termina automáticamente sin ningún cargo. Al finalizar tu prueba gratuita, recibirás una notificación y podrás decidir si deseas continuar con alguno de nuestros planes pagos. No realizamos cobros automáticos sin tu autorización."
+    },
+    {
+      "id": "cancelacion",
+      "question": "¿Puedo cancelar mi plan en cualquier momento?",
+      "answer": "Absolutamente. Puedes cancelar tu suscripción en cualquier momento desde tu panel de control. No exigimos permanencia mínima ni aplicamos penalizaciones por cancelación. Tu acceso al sistema continuará hasta el final del período ya pagado."
+    },
+    {
+      "id": "prueba-gratis",
+      "question": "¿Puedo probar el sistema antes de pagar?",
+      "answer": "Sí, ofrecemos un período de prueba gratuito de 14 días con acceso completo a todas las funcionalidades. No necesitas ingresar datos de pago para comenzar la prueba, y podrás evaluar si nuestro sistema se adapta a las necesidades de tu negocio."
+    },
+    {
+      "id": "costos-extra",
+      "question": "¿Hay algún costo extra? ¿Cobran por soporte o mantenimiento?",
+      "answer": "No hay costos adicionales ocultos. El soporte técnico, las actualizaciones del sistema y el mantenimiento están incluidos en todos nuestros planes. Solo pagas tu suscripción mensual o anual según el plan que elijas."
+    },
+    {
+      "id": "pago-adelantado",
+      "question": "¿Qué gano si pago por adelantado?",
+      "answer": "Al pagar anualmente, obtienes un descuento significativo del 20% sobre el precio mensual. Además, los planes anuales incluyen beneficios exclusivos como capacitaciones personalizadas y prioridad en el soporte técnico."
+    }
+  ]
+} 

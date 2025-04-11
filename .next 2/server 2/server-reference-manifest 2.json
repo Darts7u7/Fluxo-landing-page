@@ -1,0 +1,94 @@
+{
+  "node": {
+    "7f203469d47f97a88888fe658e83e2ebdebfec0bc4": {
+      "workers": {
+        "app/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/blog/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/api/blog/route": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/blog/[slug]/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/api/blog/[slug]/route": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/api/blog/categories/route": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/blog/page": "action-browser",
+        "app/api/blog/route": "action-browser",
+        "app/blog/[slug]/page": "action-browser",
+        "app/api/blog/[slug]/route": "action-browser",
+        "app/api/blog/categories/route": "action-browser"
+      }
+    },
+    "7f47fc2de0d3fbb1d06b4d49dd6064e46d30427145": {
+      "workers": {
+        "app/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/api/blog/route": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/api/blog/[slug]/route": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/api/blog/categories/route": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/api/blog/route": "action-browser",
+        "app/api/blog/[slug]/route": "action-browser",
+        "app/api/blog/categories/route": "action-browser"
+      }
+    },
+    "7ffe5865da5f1bcf905e57688c985b8b216337b1c7": {
+      "workers": {
+        "app/page": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/api/blog/route": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/api/blog/[slug]/route": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        },
+        "app/api/blog/categories/route": {
+          "moduleId": "(action-browser)/./node_modules/.pnpm/next@15.2.5_@babel+core@7.26.10_react-dom@19.1.0_react@19.1.0__react@19.1.0/node_modules/next/dist/build/webpack/loaders/next-flight-action-entry-loader.js?actions=%5B%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2F%40sanity%2Bnext-loader%401.3.9_%40sanity%2Btypes%403.83.0_%40types%2Breact%4019.1.0__next%4015.2.5_%40babel%2B_7d32360cf147412b57c8196aa0c36bff%2Fnode_modules%2F%40sanity%2Fnext-loader%2Fdist%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f47fc2de0d3fbb1d06b4d49dd6064e46d30427145%22%2C%22exportedName%22%3A%22setPerspectiveCookie%22%7D%2C%7B%22id%22%3A%227ffe5865da5f1bcf905e57688c985b8b216337b1c7%22%2C%22exportedName%22%3A%22revalidateSyncTags%22%7D%5D%5D%2C%5B%22%2FUsers%2Fpierre%2FDesktop%2FFluxo%2FLanding%2Flanding-page%2Fnode_modules%2F.pnpm%2Fnext-sanity%409.9.9_%40emotion%2Bis-prop-valid%401.3.1_%40sanity%2Bclient%406.28.4_%40sanity%2Bicons%403.7._67c5e324aedbaf95c6457b1b02d85672%2Fnode_modules%2Fnext-sanity%2Fdist%2Fvisual-editing%2Fserver-actions.js%22%2C%5B%7B%22id%22%3A%227f203469d47f97a88888fe658e83e2ebdebfec0bc4%22%2C%22exportedName%22%3A%22revalidateRootLayout%22%7D%5D%5D%5D&__client_imported__=true!",
+          "async": false
+        }
+      },
+      "layer": {
+        "app/page": "action-browser",
+        "app/api/blog/route": "action-browser",
+        "app/api/blog/[slug]/route": "action-browser",
+        "app/api/blog/categories/route": "action-browser"
+      }
+    }
+  },
+  "edge": {},
+  "encryptionKey": "J4pzck0Vwozc2rAPVeKRMU311ZRDrITvq+zyISXAFPE="
+}

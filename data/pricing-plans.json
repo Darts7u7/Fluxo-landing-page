@@ -1,0 +1,82 @@
+{
+  "plans": [
+    {
+      "id": "free",
+      "name": "Básico",
+      "description": "Ideal para negocios pequeños que recién comienzan",
+      "monthlyPrice": "S/0",
+      "yearlyPrice": "S/0",
+      "features": [
+        "1 negocio (tenant)",
+        "2 usuarios",
+        "Punto de Venta (POS) básico",
+        "Catálogo de hasta 50 productos",
+        "Gestión básica de inventario",
+        "Reportes básicos",
+        "Soporte por correo"
+      ],
+      "buttonText": "Empieza gratis",
+      "buttonVariant": "outline",
+      "highlighted": false
+    },
+    {
+      "id": "pro",
+      "name": "Profesional",
+      "description": "Diseñado para PyMEs en crecimiento con necesidades de gestión completa",
+      "monthlyPrice": "S/79",
+      "yearlyPrice": "S/758",
+      "discount": "Ahorra 20%",
+      "features": [
+        "Hasta 3 negocios (tenants)",
+        "10 usuarios por negocio",
+        "Punto de Venta (POS) avanzado",
+        "Gestión completa de inventario",
+        "Catálogo ilimitado de productos",
+        "Roles y permisos personalizables",
+        "Sistema de invitaciones para empleados",
+        "Dashboard con métricas en tiempo real",
+        "Reportes avanzados y exportables",
+        "Facturación electrónica",
+        "Soporte prioritario"
+      ],
+      "buttonText": "Suscríbete ahora",
+      "buttonVariant": "default",
+      "highlighted": true
+    },
+    {
+      "id": "enterprise",
+      "name": "Empresarial",
+      "description": "Solución integral para empresas con múltiples sucursales y necesidades complejas",
+      "monthlyPrice": "S/199",
+      "yearlyPrice": "S/1,910",
+      "discount": "Ahorra 20%",
+      "features": [
+        "Negocios (tenants) ilimitados",
+        "Usuarios ilimitados",
+        "Todo lo del plan Profesional",
+        "Personalización completa del sistema",
+        "API para integraciones con otros sistemas",
+        "Análisis avanzado de datos y reportes personalizados",
+        "Seguridad reforzada con registro de actividad",
+        "Capacitación personalizada para tu equipo",
+        "Implementación asistida",
+        "Gestor de cuenta dedicado",
+        "Soporte técnico 24/7"
+      ],
+      "setupFee": "Configuración inicial única: S/500",
+      "buttonText": "Contáctanos",
+      "buttonVariant": "outline",
+      "highlighted": false
+    }
+  ],
+  "tooltips": {
+    "Punto de Venta (POS) avanzado": "Interfaz intuitiva optimizada para operaciones rápidas, con soporte para ventas en efectivo y tarjeta, cálculo automático de cambio, y generación de tickets.",
+    "Gestión completa de inventario": "Control total de productos con categorización, registro automático de movimientos de stock, y funcionalidad para importar/exportar productos mediante Excel.",
+    "Roles y permisos personalizables": "Define y asigna roles específicos a tus empleados para controlar su acceso a las diferentes funcionalidades del sistema.",
+    "Dashboard con métricas en tiempo real": "Visualización de indicadores clave del negocio en tiempo real para tomar decisiones informadas rápidamente.",
+    "Facturación electrónica": "Genera facturas y boletas electrónicas que cumplen con las normativas fiscales vigentes.",
+    "Negocios (tenants) ilimitados": "Administra múltiples negocios desde una única plataforma centralizada, cada uno con su propio espacio aislado de datos y configuraciones.",
+    "API para integraciones": "Conecta el sistema con otras aplicaciones y servicios mediante una API robusta y documentada.",
+    "Seguridad reforzada": "Protección avanzada con verificación de email, separación de datos entre negocios y registro detallado de actividades de los usuarios."
+  }
+} 

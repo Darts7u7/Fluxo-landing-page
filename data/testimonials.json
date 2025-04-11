@@ -1,0 +1,58 @@
+{
+  "testimonials": [
+    {
+      "_id": "1",
+      "name": "Jeanpierre",
+      "role": "Gerente",
+      "company": "Noche",
+      "content": "Excelente me encanto",
+      "rating": 5,
+      "image": "https://randomuser.me/api/portraits/men/32.jpg"
+    },
+    {
+      "_id": "2",
+      "name": "limonada",
+      "role": "Gerente",
+      "company": "Noche",
+      "content": "Genial me encta todo",
+      "rating": 5,
+      "image": "https://randomuser.me/api/portraits/women/44.jpg"
+    },
+    {
+      "_id": "3",
+      "name": "Carlos Rodríguez",
+      "role": "CEO",
+      "company": "TechSolutions",
+      "content": "FLUXO ha transformado la forma en que gestionamos nuestro negocio. La facilidad de uso y las potentes funciones analíticas nos han ayudado a crecer significativamente.",
+      "rating": 5,
+      "image": "https://randomuser.me/api/portraits/men/45.jpg"
+    },
+    {
+      "_id": "4",
+      "name": "Alejandro Méndez",
+      "role": "Propietario",
+      "company": "Tienda AM",
+      "content": "Como propietario de una pequeña tienda, FLUXO me ha permitido competir con grandes cadenas. Su POS y gestión de inventario son excepcionales.",
+      "rating": 4,
+      "image": "https://randomuser.me/api/portraits/men/22.jpg"
+    },
+    {
+      "_id": "5",
+      "name": "Ana Martínez",
+      "role": "Directora Financiera",
+      "company": "Grupo AMG",
+      "content": "La facturación electrónica de FLUXO nos ha ahorrado horas de trabajo. Además, el soporte al cliente es excelente.",
+      "rating": 5,
+      "image": "https://randomuser.me/api/portraits/women/67.jpg"
+    },
+    {
+      "_id": "6",
+      "name": "María López",
+      "role": "Gerente de Tienda",
+      "company": "Boutique ML",
+      "content": "La integración con mi tienda online fue muy sencilla. Ahora puedo gestionar todo mi inventario desde un solo lugar y no tengo que preocuparme por duplicaciones.",
+      "rating": 5,
+      "image": "https://randomuser.me/api/portraits/women/32.jpg"
+    }
+  ]
+} 
