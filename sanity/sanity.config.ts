@@ -9,7 +9,7 @@ export default defineConfig({
   title: 'Fluxo CMS',
   projectId: process.env.NEXT_PUBLIC_SANITY_PROJECT_ID || 'undefined',
   dataset: process.env.NEXT_PUBLIC_SANITY_DATASET || 'production',
-  basePath: '/admin',
+  basePath: '/px219_panel',
   plugins: [deskTool(), visionTool(), codeInput()],
   schema,
 }) 
