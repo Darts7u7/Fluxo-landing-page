@@ -39,10 +39,13 @@ export async function sanityFetch<QueryResponse>({
   cache?: RequestCache
   next?: NextFetchRequestConfig
 }): Promise<QueryResponse> {
-  // Si no hay projectId válido, devolver un objeto vacío compatible con la respuesta esperada
+  // Si no hay projectId válido, devolver un array vacío o un objeto vacío según corresponda
   if (!projectId) {
     console.warn('Sanity fetch: projectId no válido, devolviendo datos vacíos');
-    return {} as QueryResponse;
+    // Determinar si la consulta probablemente devuelve un array
+    const isArrayQuery = query.trim().startsWith('*[');
+    // Devolver un array vacío si parece ser una consulta de tipo array
+    return (isArrayQuery ? [] : {}) as QueryResponse;
   }
   
   try {
@@ -56,7 +59,9 @@ export async function sanityFetch<QueryResponse>({
     });
   } catch (error) {
     console.error('Error al obtener datos de Sanity:', error);
-    // Devolver un objeto vacío compatible con la respuesta esperada
-    return {} as QueryResponse;
+    // Determinar si la consulta probablemente devuelve un array
+    const isArrayQuery = query.trim().startsWith('*[');
+    // Devolver un array vacío o un objeto vacío según corresponda
+    return (isArrayQuery ? [] : {}) as QueryResponse;
   }
 } 

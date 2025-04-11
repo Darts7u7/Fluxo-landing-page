@@ -5,6 +5,7 @@ import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { CTASection } from '@/components/cta-section'
 import { TidioChat } from '@/components/tidio-chat'
+import { Analytics } from '@vercel/analytics/react'
 
 export const metadata: Metadata = {
   title: 'Fluxo - Software de Gestión Empresarial',
@@ -34,6 +35,7 @@ export default function RootLayout({
           <Footer />
           <TidioChat />
         </ClientLayout>
+        <Analytics />
       </body>
     </html>
   )
