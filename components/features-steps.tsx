@@ -96,9 +96,9 @@ type Feature = {
   description: string;
   icon?: string;
   image?: {
-    asset: {
-      _ref: string;
-      url: string;
+    asset?: {
+      _ref?: string;
+      url?: string;
     }
   };
   order?: number;
@@ -116,7 +116,9 @@ export function FeaturesSteps({ features }: FeaturesStepsProps) {
   
   // Generar pasos dinámicamente basados en las características proporcionadas
   const featuresData = useMemo(() => {
-    if (!features || features.length === 0) {
+    // Asegurarse de que features es un array válido
+    if (!features || !Array.isArray(features) || features.length === 0) {
+      console.log("Usando características predeterminadas");
       return defaultSteps;
     }
     
@@ -125,20 +127,28 @@ export function FeaturesSteps({ features }: FeaturesStepsProps) {
       const IconComponent = feature.icon && iconMap[feature.icon as keyof typeof iconMap]
         ? iconMap[feature.icon as keyof typeof iconMap]
         : Object.values(iconMap)[index % Object.values(iconMap).length];
+      
+      // Verificar que cada propiedad existe antes de usarla
+      const title = feature.title || `Característica ${index + 1}`;
+      const description = feature.description || 'Descripción no disponible';
+      const previewUrl = feature.image?.asset?.url || 
+                        (defaultSteps[index % defaultSteps.length] ? defaultSteps[index % defaultSteps.length].preview : '/images/default.jpeg');
+      const featureSlug = feature.slug || 
+                        (defaultSteps[index % defaultSteps.length] ? defaultSteps[index % defaultSteps.length].slug : 'caracteristica');
         
       return {
         icon: IconComponent,
-        title: feature.title,
-        description: feature.description,
+        title,
+        description,
         // Crear puntos de manera dinámica a partir de la descripción si no hay puntos específicos
         highlightPoints: [
-          `Optimiza tu ${feature.title.toLowerCase()} con nuestra solución integrada.`,
+          `Optimiza tu ${title.toLowerCase()} con nuestra solución integrada.`,
           `Accede desde cualquier dispositivo a tus datos en tiempo real.`,
           `Integración perfecta con todos los módulos de nuestro sistema.`
         ],
-        buttonText: `Explorar ${feature.title}`,
-        preview: feature.image?.asset?.url || defaultSteps[index % defaultSteps.length].preview,
-        slug: feature.slug || defaultSteps[index % defaultSteps.length].slug,
+        buttonText: `Explorar ${title}`,
+        preview: previewUrl,
+        slug: featureSlug,
       };
     });
   }, [features]);

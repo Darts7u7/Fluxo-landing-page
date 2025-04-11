@@ -21,21 +21,27 @@ function LoadingFeatures() {
 }
 
 export default async function Home() {
-  // Prefetch data for features
-  const featuresPromise = sanityFetch({
-    query: allFeaturesQuery,
-    tags: ['feature'],
-    cache: 'force-cache',
-    next: { revalidate },
-  }).catch(error => {
+  // Prefetch data for features - con manejo de errores mejorado
+  let features;
+  try {
+    features = await sanityFetch({
+      query: allFeaturesQuery,
+      tags: ['feature'],
+      cache: 'force-cache',
+      next: { revalidate },
+    });
+    
+    // Verificamos explícitamente que features sea un array
+    if (!features || !Array.isArray(features)) {
+      console.log('Los datos de características no son un array, usando fallback');
+      features = fallbackFeatures;
+    }
+  } catch (error) {
     console.error('Error al cargar características:', error);
-    return fallbackFeatures;
-  });
+    features = fallbackFeatures;
+  }
   
-  // Usamos los datos de features
-  const features = await featuresPromise;
-  
-  // Verificamos si los datos son válidos, si no, usamos los de respaldo
+  // Asegurar que tenemos datos válidos para los componentes
   const validFeatures = Array.isArray(features) && features.length > 0 
     ? features 
     : fallbackFeatures;
