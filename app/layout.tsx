@@ -4,6 +4,7 @@ import { ClientLayout } from '@/components/client-layout'
 import { Navbar } from '@/components/navbar'
 import { Footer } from '@/components/footer'
 import { CTASection } from '@/components/cta-section'
+import { TidioChat } from '@/components/tidio-chat'
 
 export const metadata: Metadata = {
   title: 'Fluxo - Software de Gestión Empresarial',
@@ -31,6 +32,7 @@ export default function RootLayout({
             <CTASection />
           </div>
           <Footer />
+          <TidioChat />
         </ClientLayout>
       </body>
     </html>

@@ -155,16 +155,15 @@ export function FeaturesSteps({ features }: FeaturesStepsProps) {
           >
             <Badge
               variant="outline"
-              className="mb-4 rounded-full border-[#1B64F1] bg-[#1B64F1]/10 px-4 py-1.5 text-sm font-medium text-[#1B64F1]"
+              className="mb-3 rounded-full border-[#1B64F1] bg-[#1B64F1]/10 px-3 py-1 text-xs font-medium text-[#1B64F1]"
             >
-              Precios Simples
+              Características
             </Badge>
-            <h2 className="text-2xl sm:text-3xl font-bold md:text-4xl mb-6">
-              Elige el plan que se adapta a ti
+            <h2 className="text-xl sm:text-2xl font-bold md:text-3xl mb-4">
+              Todo lo que necesitas para tu negocio
             </h2>
-            <p className="text-gray-600 max-w-[800px] mx-auto text-base sm:text-lg">
-              Comienza hoy y accede a más funcionalidades con nuestros planes premium. ¡Gestiona tu
-              negocio de manera eficiente y sin complicaciones!
+            <p className="text-gray-600 max-w-[800px] mx-auto text-sm sm:text-base">
+              Descubre todas las herramientas y funcionalidades que Fluxo tiene para hacer crecer tu negocio de manera eficiente
             </p>
           </motion.div>
         </div>
@@ -181,22 +180,92 @@ export function FeaturesSteps({ features }: FeaturesStepsProps) {
           className={`container px-4 md:px-6 mx-auto py-16 md:py-20 ${index !== featuresData.length - 1 ? 'border-b border-gray-100' : ''}`}
         >
           <div className="mx-auto max-w-[1200px]">
-            <div className="grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
-              {/* Imagen (alterna entre izquierda y derecha) */}
-              <div className={`relative order-2 ${index % 2 === 0 ? 'lg:order-1' : 'lg:order-2'}`}>
+            {/* Versión Móvil */}
+            <div className="lg:hidden space-y-8">
+              {/* Título primero */}
+              <motion.div
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.3 }}
+                className="text-center"
+              >
+                <h2 className="text-2xl font-bold mb-3 text-gray-900">
+                  {feature.title}
+                </h2>
+              </motion.div>
+
+              {/* Imagen después */}
+              <motion.div 
+                className="relative -mx-4 sm:mx-0"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.4 }}
+              >
+                <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-64 h-64 bg-[#1B64F1] rounded-full opacity-60 blur-3xl z-0"></div>
+                <div className="relative z-10">
+                  <MacbookPro 
+                    src={feature.preview}
+                    width={650}
+                    height={450}
+                    className="max-w-full"
+                    style={{ color: "#f5f5f7" }}
+                  />
+                </div>
+              </motion.div>
+
+              {/* Descripción y puntos después */}
+              <motion.div
+                className="space-y-6"
+                initial={{ opacity: 0, y: 20 }}
+                whileInView={{ opacity: 1, y: 0 }}
+                viewport={{ once: true }}
+                transition={{ duration: 0.7, delay: 0.5 }}
+              >
+                <p className="text-gray-600 text-base text-center">
+                  {feature.description}
+                </p>
+
+                <div className="space-y-4 mt-8">
+                  {feature.highlightPoints.map((point, idx) => (
+                    <div key={idx} className="flex items-start gap-3">
+                      <div className="flex-shrink-0 mt-1">
+                        <div className="bg-[#1B64F1]/10 rounded-full w-6 h-6 flex items-center justify-center">
+                          <CheckCircle2 className="w-4 h-4 text-[#1B64F1]" />
+                        </div>
+                      </div>
+                      <p className="text-gray-600 text-sm">{point}</p>
+                    </div>
+                  ))}
+                </div>
+
+                <div className="pt-8 pb-4">
+                  <Link href={`/features/${feature.slug}`} className="block">
+                    <Button
+                      className="bg-[#1B64F1] hover:bg-[#1B64F1]/90 text-white font-medium rounded-full px-8 py-3 w-full text-base shadow-lg shadow-blue-500/30 transition-all duration-300 hover:shadow-blue-500/40 hover:scale-[1.02]"
+                    >
+                      {feature.buttonText}
+                    </Button>
+                  </Link>
+                </div>
+              </motion.div>
+            </div>
+
+            {/* Versión Desktop - mantener el diseño original */}
+            <div className="hidden lg:grid lg:grid-cols-2 gap-12 md:gap-16 items-center">
+              {/* Contenido original para desktop */}
+              <div className={`relative ${index % 2 === 0 ? 'order-1' : 'order-2'}`}>
                 <motion.div 
                   className="relative"
                   initial={{ opacity: 0, x: index % 2 === 0 ? -30 : 30 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-100px 0px" }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.7, delay: 0.3 }}
                 >
-                  {/* Círculo decorativo */}
                   <div 
                     className={`absolute ${index % 2 === 0 ? '-top-20 -right-20' : '-top-20 -left-20'} w-64 h-64 bg-[#1B64F1] rounded-full opacity-60 blur-3xl z-0`}
                   ></div>
-                  
-                  {/* MacbookPro como mockup de laptop */}
                   <div className="relative z-10">
                     <MacbookPro 
                       src={feature.preview}
@@ -209,23 +278,21 @@ export function FeaturesSteps({ features }: FeaturesStepsProps) {
                 </motion.div>
               </div>
 
-              {/* Contenido de texto (alterna entre izquierda y derecha) */}
-              <div className={`space-y-8 order-1 ${index % 2 === 0 ? 'lg:order-2' : 'lg:order-1'}`}>
+              <div className={`space-y-8 ${index % 2 === 0 ? 'order-2' : 'order-1'}`}>
                 <motion.div
                   initial={{ opacity: 0, x: index % 2 === 0 ? 30 : -30 }}
                   whileInView={{ opacity: 1, x: 0 }}
-                  viewport={{ once: true, margin: "-100px 0px" }}
+                  viewport={{ once: true }}
                   transition={{ duration: 0.7, delay: 0.3 }}
                 >
-                  <h2 className="text-3xl md:text-4xl font-bold mb-4 text-gray-900">
+                  <h2 className="text-2xl md:text-3xl font-bold mb-3 text-gray-900">
                     {feature.title}
                   </h2>
-                  <p className="text-gray-600 text-lg">
+                  <p className="text-gray-600 text-base">
                     {feature.description}
                   </p>
                 </motion.div>
 
-                {/* Puntos destacados */}
                 <div className="space-y-4">
                   {feature.highlightPoints.map((point, idx) => (
                     <motion.div 
@@ -237,16 +304,15 @@ export function FeaturesSteps({ features }: FeaturesStepsProps) {
                       className="flex items-start gap-3"
                     >
                       <div className="flex-shrink-0 mt-1">
-                        <div className="bg-[#1B64F1]/10 rounded-full w-8 h-8 flex items-center justify-center">
-                          <CheckCircle2 className="w-5 h-5 text-[#1B64F1]" />
+                        <div className="bg-[#1B64F1]/10 rounded-full w-6 h-6 flex items-center justify-center">
+                          <CheckCircle2 className="w-4 h-4 text-[#1B64F1]" />
                         </div>
                       </div>
-                      <p className="text-gray-600">{point}</p>
+                      <p className="text-gray-600 text-sm">{point}</p>
                     </motion.div>
                   ))}
                 </div>
 
-                {/* Botón CTA */}
                 <motion.div
                   initial={{ opacity: 0, y: 20 }}
                   whileInView={{ opacity: 1, y: 0 }}

@@ -179,6 +179,9 @@ export function Hero() {
             </motion.div>
           </motion.div>
 
+          {/* Espacio adicional solo en desktop */}
+          <div className="hidden md:block h-8"></div>
+
           {/* Browser mockup with video preview - Safari solo para pantallas grandes, imagen para móvil y tablet */}
           <motion.div
             className="relative mt-5 sm:mt-0 w-full max-w-[1200px] cursor-pointer overflow-hidden rounded-lg md:rounded-2xl mb-0"
