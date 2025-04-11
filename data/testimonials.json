@@ -2,57 +2,57 @@
   "testimonials": [
     {
       "_id": "1",
-      "name": "Jeanpierre",
-      "role": "Gerente",
-      "company": "Noche",
-      "content": "Excelente me encanto",
-      "rating": 5,
-      "image": "https://randomuser.me/api/portraits/men/32.jpg"
+      "name": "Rodrigo Mendoza",
+      "role": "Gerente General",
+      "company": "Café Nocturno",
+      "content": "FLUXO ha sido útil para nuestro negocio, aunque la curva de aprendizaje inicial fue más alta de lo esperado. Una vez superado esto, hemos notado mejoras en nuestra gestión.",
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1560250097-0b93528c311a?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80"
     },
     {
       "_id": "2",
-      "name": "limonada",
-      "role": "Gerente",
-      "company": "Noche",
-      "content": "Genial me encta todo",
-      "rating": 5,
-      "image": "https://randomuser.me/api/portraits/women/44.jpg"
+      "name": "Gabriela Fuentes",
+      "role": "Gerente de Operaciones",
+      "company": "Restaurante Limón",
+      "content": "La interfaz podría ser más intuitiva. Si bien las funcionalidades son completas, a veces nos encontramos con dificultades para acceder a ciertos reportes.",
+      "rating": 3,
+      "image": "https://images.unsplash.com/photo-1573496359142-b8d87734a5a2?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80"
     },
     {
       "_id": "3",
       "name": "Carlos Rodríguez",
       "role": "CEO",
       "company": "TechSolutions",
-      "content": "FLUXO ha transformado la forma en que gestionamos nuestro negocio. La facilidad de uso y las potentes funciones analíticas nos han ayudado a crecer significativamente.",
+      "content": "FLUXO ha transformado la forma en que gestionamos nuestro negocio. La facilidad de uso y las potentes funciones analíticas nos han ayudado a crecer significativamente en el último año.",
       "rating": 5,
-      "image": "https://randomuser.me/api/portraits/men/45.jpg"
+      "image": "https://images.unsplash.com/photo-1472099645785-5658abf4ff4e?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80"
     },
     {
       "_id": "4",
       "name": "Alejandro Méndez",
       "role": "Propietario",
-      "company": "Tienda AM",
-      "content": "Como propietario de una pequeña tienda, FLUXO me ha permitido competir con grandes cadenas. Su POS y gestión de inventario son excepcionales.",
+      "company": "Tienda Artesanal Méndez",
+      "content": "Como propietario de una pequeña tienda, FLUXO me ha permitido competir con grandes cadenas. Sin embargo, el precio es algo elevado para negocios pequeños como el mío.",
       "rating": 4,
-      "image": "https://randomuser.me/api/portraits/men/22.jpg"
+      "image": "https://images.unsplash.com/photo-1519085360753-af0119f7cbe7?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80"
     },
     {
       "_id": "5",
       "name": "Ana Martínez",
       "role": "Directora Financiera",
       "company": "Grupo AMG",
-      "content": "La facturación electrónica de FLUXO nos ha ahorrado horas de trabajo. Además, el soporte al cliente es excelente.",
-      "rating": 5,
-      "image": "https://randomuser.me/api/portraits/women/67.jpg"
+      "content": "La facturación electrónica de FLUXO nos ha ahorrado horas de trabajo. Aunque tuvimos algunos problemas iniciales con la integración bancaria, su equipo de soporte fue eficiente resolviendo todo.",
+      "rating": 4,
+      "image": "https://images.unsplash.com/photo-1580489944761-15a19d654956?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80"
     },
     {
       "_id": "6",
-      "name": "María López",
+      "name": "Patricia Vega",
       "role": "Gerente de Tienda",
-      "company": "Boutique ML",
-      "content": "La integración con mi tienda online fue muy sencilla. Ahora puedo gestionar todo mi inventario desde un solo lugar y no tengo que preocuparme por duplicaciones.",
+      "company": "Boutique Eleganza",
+      "content": "La integración con mi tienda online fue muy sencilla. El sistema es muy completo y ha superado todas mis expectativas. El soporte técnico siempre está disponible para resolver cualquier duda.",
       "rating": 5,
-      "image": "https://randomuser.me/api/portraits/women/32.jpg"
+      "image": "https://images.unsplash.com/photo-1598550874175-4d0ef436c909?ixlib=rb-4.0.3&auto=format&fit=crop&w=256&q=80"
     }
   ]
 } 

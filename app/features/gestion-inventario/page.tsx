@@ -202,18 +202,18 @@ export default function InventoryPage() {
       </div>
 
       {/* Features Section */}
-      <div className="mx-auto max-w-[1200px] px-4 py-20">
-        <div className="text-center mb-16">
+      <div className="mx-auto max-w-[1200px] px-4 sm:px-6 py-12 sm:py-20">
+        <div className="text-center mb-10 sm:mb-16">
           <Badge
             variant="outline"
             className="mb-4 rounded-full border-[#1C64F2] bg-[#1C64F2]/10 px-3 py-1 text-xs text-[#1C64F2] inline-flex items-center"
           >
             <Zap className="h-3 w-3 mr-1" /> Características Avanzadas
           </Badge>
-          <h2 className="text-3xl md:text-4xl font-bold mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold mb-4 sm:mb-6">
             Todo lo que necesitas para un control eficiente
           </h2>
-          <p className="text-gray-600 max-w-2xl mx-auto">
+          <p className="text-gray-600 max-w-2xl mx-auto px-2">
             Nuestra plataforma de gestión de inventario ofrece herramientas potentes que te ayudan a optimizar 
             tu stock, reducir costos y maximizar beneficios.
           </p>
@@ -227,7 +227,7 @@ export default function InventoryPage() {
           {features.map((feature, index) => (
             <div 
               key={feature.title}
-              className={`mb-16 md:mb-24 relative flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center`}
+              className={`mb-12 md:mb-24 relative flex flex-col ${index % 2 === 0 ? 'md:flex-row' : 'md:flex-row-reverse'} items-center`}
             >
               {/* Círculo conector en la línea del tiempo */}
               <div className="absolute left-1/2 top-8 w-8 h-8 rounded-full bg-blue-600 transform -translate-x-1/2 hidden md:flex items-center justify-center">
@@ -235,22 +235,22 @@ export default function InventoryPage() {
               </div>
               
               {/* Contenedor del icono */}
-              <div className={`w-full md:w-1/2 flex ${index % 2 === 0 ? 'md:justify-end md:pr-12' : 'md:justify-start md:pl-12'} mb-6 md:mb-0`}>
-                <div className={`w-24 h-24 rounded-2xl ${feature.color} flex items-center justify-center shadow-lg transform transition-transform hover:scale-110 hover:rotate-3`}>
-                  <feature.icon className="w-12 h-12 text-white" />
+              <div className={`w-full md:w-1/2 flex ${index % 2 === 0 ? 'md:justify-end md:pr-8 lg:pr-12' : 'md:justify-start md:pl-8 lg:pl-12'} mb-4 md:mb-0 justify-center`}>
+                <div className={`w-20 h-20 sm:w-24 sm:h-24 rounded-2xl ${feature.color} flex items-center justify-center shadow-lg transform transition-transform hover:scale-110 hover:rotate-3`}>
+                  <feature.icon className="w-10 h-10 sm:w-12 sm:h-12 text-white" />
                 </div>
               </div>
               
               {/* Contenido de texto */}
-              <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pl-12' : 'md:pr-12 md:text-right'}`}>
-                <h3 className="text-2xl font-bold mb-3">{feature.title}</h3>
-                <p className="text-gray-600 leading-relaxed">{feature.description}</p>
+              <div className={`w-full md:w-1/2 ${index % 2 === 0 ? 'md:pl-8 lg:pl-12' : 'md:pr-8 lg:pr-12 md:text-right'} px-4 md:px-0`}>
+                <h3 className="text-xl sm:text-2xl font-bold mb-2 sm:mb-3">{feature.title}</h3>
+                <p className="text-gray-600 text-sm sm:text-base leading-relaxed">{feature.description}</p>
                 
                 {/* Ejemplos de uso o características específicas */}
-                <div className={`mt-4 flex flex-col space-y-1 ${index % 2 === 0 ? '' : 'md:items-end'}`}>
+                <div className={`mt-3 sm:mt-4 flex flex-col space-y-1 ${index % 2 === 0 ? '' : 'md:items-end'}`}>
                   {[1, 2].map((item) => (
-                    <div key={item} className={`inline-flex items-center text-sm text-blue-700 ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
-                      <Check className="h-4 w-4 mr-2 flex-shrink-0" />
+                    <div key={item} className={`inline-flex items-center text-xs sm:text-sm text-blue-700 ${index % 2 === 0 ? '' : 'md:flex-row-reverse'}`}>
+                      <Check className="h-3.5 w-3.5 sm:h-4 sm:w-4 mr-1.5 sm:mr-2 flex-shrink-0" />
                       <span className="text-gray-700">
                         {index === 0 && item === 1 && "Control preciso del inventario disponible"}
                         {index === 0 && item === 2 && "Actualización automática del stock"}
@@ -280,17 +280,17 @@ export default function InventoryPage() {
       </div>
 
       {/* Advanced Features Section */}
-      <div className="bg-white py-24">
-        <div className="mx-auto max-w-[1200px] px-4">
-          <div className="grid gap-16 md:grid-cols-2 items-center">
+      <div className="bg-white py-16 sm:py-24">
+        <div className="mx-auto max-w-[1200px] px-4 sm:px-6">
+          <div className="grid gap-10 md:gap-16 md:grid-cols-2 items-center">
             <div className="order-2 md:order-1">
-              <h2 className="text-3xl font-bold mb-6">Control de inventario avanzado</h2>
-              <p className="text-gray-600 mb-8">
+              <h2 className="text-2xl sm:text-3xl font-bold mb-4 sm:mb-6">Control de inventario avanzado</h2>
+              <p className="text-gray-600 mb-6 sm:mb-8 text-sm sm:text-base">
                 Nuestro sistema te permite tener un control total sobre tu inventario con herramientas 
                 diseñadas para negocios de cualquier tamaño:
               </p>
               
-              <div className="space-y-5">
+              <div className="space-y-3 sm:space-y-5">
                 {[
                   { text: "Seguimiento en tiempo real de todos tus productos", icon: Search },
                   { text: "Alertas automáticas de stock bajo personalizables", icon: Bell },
@@ -299,23 +299,23 @@ export default function InventoryPage() {
                   { text: "Reportes detallados y análisis predictivo", icon: BarChart2 },
                   { text: "Gestión avanzada de proveedores y órdenes", icon: ClipboardList },
                 ].map((feature, index) => (
-                  <div key={index} className="flex items-start gap-4 group">
-                    <div className="mt-1 flex h-7 w-7 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-700 text-white shadow-md transform transition-transform group-hover:scale-110">
-                      <feature.icon className="h-3.5 w-3.5" />
+                  <div key={index} className="flex items-start gap-3 sm:gap-4 group">
+                    <div className="mt-0.5 sm:mt-1 flex h-6 w-6 sm:h-7 sm:w-7 items-center justify-center rounded-full bg-gradient-to-br from-blue-500 to-blue-700 text-white shadow-md transform transition-transform group-hover:scale-110">
+                      <feature.icon className="h-3 w-3 sm:h-3.5 sm:w-3.5" />
                     </div>
-                    <span className="text-gray-700 group-hover:text-gray-900 transition-colors">{feature.text}</span>
+                    <span className="text-sm sm:text-base text-gray-700 group-hover:text-gray-900 transition-colors">{feature.text}</span>
                   </div>
                 ))}
               </div>
               
-              <div className="mt-10 inline-flex items-center text-[#1C64F2] font-medium">
-                <span className="border-b-2 border-blue-500 pb-1">Descubre más funcionalidades</span>
+              <div className="mt-8 sm:mt-10 inline-flex items-center text-[#1C64F2] font-medium">
+                <span className="border-b-2 border-blue-500 pb-1 text-sm sm:text-base">Descubre más funcionalidades</span>
                 <ArrowRight className="ml-2 h-4 w-4" />
               </div>
             </div>
             
             <div className="order-1 md:order-2">
-              <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-blue-50 via-white to-blue-50 border border-blue-100 p-6">
+              <div className="rounded-2xl overflow-hidden shadow-xl bg-gradient-to-br from-blue-50 via-white to-blue-50 border border-blue-100 p-4 sm:p-6">
                 <div className="relative aspect-[4/3]">
                   <div className="absolute inset-0 bg-blue-100/30 rounded-xl overflow-hidden">
                     {/* Grid lines for dashboard effect */}
@@ -325,16 +325,16 @@ export default function InventoryPage() {
                     }}></div>
                     
                     {/* Dashboard elements */}
-                    <div className="absolute top-8 left-8 right-8 rounded-lg bg-white shadow-md p-4 border border-blue-100">
-                      <div className="mb-3 flex justify-between items-center">
-                        <div className="font-semibold text-gray-700">Productos por Categoría</div>
-                        <div className="text-xs text-gray-500">Últimos 30 días</div>
+                    <div className="absolute top-4 sm:top-8 left-4 sm:left-8 right-4 sm:right-8 rounded-lg bg-white shadow-md p-3 sm:p-4 border border-blue-100">
+                      <div className="mb-2 sm:mb-3 flex justify-between items-center">
+                        <div className="font-semibold text-gray-700 text-xs sm:text-sm">Productos por Categoría</div>
+                        <div className="text-xs text-gray-500 hidden sm:block">Últimos 30 días</div>
                       </div>
                       
                       {/* Simple chart representation */}
-                      <div className="h-32 flex items-end justify-between">
+                      <div className="h-24 sm:h-32 flex items-end justify-between">
                         {[60, 40, 75, 55, 90, 35].map((height, i) => (
-                          <div key={i} className="w-8 mx-1 rounded-t-sm" 
+                          <div key={i} className="w-4 sm:w-8 mx-0.5 sm:mx-1 rounded-t-sm" 
                             style={{ 
                               height: `${height}%`, 
                               backgroundColor: i % 2 === 0 ? '#1C64F2' : '#60A5FA' 
@@ -343,18 +343,18 @@ export default function InventoryPage() {
                         ))}
                       </div>
                       
-                      <div className="mt-2 flex justify-between text-xs text-gray-500">
+                      <div className="mt-2 flex justify-between text-[10px] sm:text-xs text-gray-500 flex-wrap">
                         <span>Electr.</span>
                         <span>Alim.</span>
                         <span>Ropa</span>
                         <span>Hogar</span>
-                        <span>Belleza</span>
+                        <span>Bell.</span>
                         <span>Otros</span>
                       </div>
                     </div>
                     
-                    <div className="absolute bottom-8 left-8 w-52 rounded-lg bg-white shadow-md p-4 border border-blue-100">
-                      <div className="text-sm font-semibold text-gray-700 mb-2">Productos Más Vendidos</div>
+                    <div className="absolute bottom-4 sm:bottom-8 left-4 sm:left-8 w-40 sm:w-52 rounded-lg bg-white shadow-md p-3 sm:p-4 border border-blue-100">
+                      <div className="text-xs sm:text-sm font-semibold text-gray-700 mb-2">Productos Más Vendidos</div>
                       <div className="space-y-2">
                         {[
                           { name: "Notebook Pro", stock: 24, percent: 85 },
@@ -362,11 +362,11 @@ export default function InventoryPage() {
                           { name: "Teclado Mecánico", stock: 5, percent: 30 },
                         ].map((item, i) => (
                           <div key={i}>
-                            <div className="flex justify-between text-xs mb-1">
+                            <div className="flex justify-between text-[10px] sm:text-xs mb-1">
                               <span className="font-medium text-gray-600">{item.name}</span>
                               <span className="text-gray-500">{item.stock} uds.</span>
                             </div>
-                            <div className="h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
+                            <div className="h-1 sm:h-1.5 w-full bg-gray-100 rounded-full overflow-hidden">
                               <div className="h-full bg-[#1C64F2] rounded-full" style={{ width: `${item.percent}%` }}></div>
                             </div>
                           </div>
@@ -382,7 +382,7 @@ export default function InventoryPage() {
       </div>
 
       {/* Call To Action */}
-      <div className="bg-gradient-to-r from-[#1C64F2] to-blue-700 py-20 relative overflow-hidden">
+      <div className="bg-gradient-to-r from-[#1C64F2] to-blue-700 py-16 sm:py-20 relative overflow-hidden">
         {/* Decorative Elements */}
         <div className="absolute top-0 left-0 w-full h-full">
           <div className="absolute top-10 left-10 w-32 h-32 bg-white opacity-10 rounded-full"></div>
@@ -390,11 +390,11 @@ export default function InventoryPage() {
           <div className="absolute top-1/2 left-1/2 transform -translate-x-1/2 -translate-y-1/2 w-64 h-64 bg-white opacity-5 rounded-full"></div>
         </div>
         
-        <div className="mx-auto max-w-[900px] px-4 text-center relative z-10">
-          <div className="inline-flex items-center justify-center w-20 h-20 rounded-full bg-white/10 p-3 mb-8">
-            <CircleDollarSign className="h-10 w-10 text-white" />
+        <div className="mx-auto max-w-[900px] px-4 sm:px-6 text-center relative z-10">
+          <div className="inline-flex items-center justify-center w-16 h-16 sm:w-20 sm:h-20 rounded-full bg-white/10 p-3 mb-6 sm:mb-8">
+            <CircleDollarSign className="h-8 w-8 sm:h-10 sm:w-10 text-white" />
           </div>
-          <h2 className="text-3xl md:text-4xl font-bold text-white mb-6">
+          <h2 className="text-2xl sm:text-3xl md:text-4xl font-bold text-white mb-4 sm:mb-6">
             Optimiza tu inventario y maximiza tus ganancias
           </h2>
           <p className="text-blue-100 mb-10 max-w-2xl mx-auto">

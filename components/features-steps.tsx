@@ -203,7 +203,6 @@ export function FeaturesSteps({ features }: FeaturesStepsProps) {
                 viewport={{ once: true }}
                 transition={{ duration: 0.7, delay: 0.4 }}
               >
-                <div className="absolute -top-20 left-1/2 transform -translate-x-1/2 w-64 h-64 bg-[#1B64F1] rounded-full opacity-60 blur-3xl z-0"></div>
                 <div className="relative z-10">
                   <MacbookPro 
                     src={feature.preview}
@@ -263,9 +262,6 @@ export function FeaturesSteps({ features }: FeaturesStepsProps) {
                   viewport={{ once: true }}
                   transition={{ duration: 0.7, delay: 0.3 }}
                 >
-                  <div 
-                    className={`absolute ${index % 2 === 0 ? '-top-20 -right-20' : '-top-20 -left-20'} w-64 h-64 bg-[#1B64F1] rounded-full opacity-60 blur-3xl z-0`}
-                  ></div>
                   <div className="relative z-10">
                     <MacbookPro 
                       src={feature.preview}
