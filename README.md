@@ -1,115 +1,21 @@
 # Fluxo Landing Page
 
-Landing page para la plataforma de gestión de negocios Fluxo, desarrollada con Next.js, React y Tailwind CSS.
+Esta es la página de presentación de Fluxo, una innovadora plataforma de gestión de negocios.
 
-## Tecnologías
+## Derechos de Autor y Propiedad Intelectual
 
-- Next.js 15.2.4
-- React 19
-- Tailwind CSS
-- Sanity CMS
-- Framer Motion
+© Fluxo. Todos los derechos reservados.
 
-## Configuración del Proyecto
+El software Fluxo, incluyendo esta página de presentación, su código fuente, diseño, contenido y todos los activos asociados, son propiedad exclusiva de Fluxo y están protegidos por las leyes internacionales de derechos de autor y propiedad intelectual.
 
-### Requisitos Previos
+**Advertencia:** Cualquier reproducción, distribución, modificación, ingeniería inversa, o uso no autorizado de este software o cualquiera de sus componentes, en su totalidad o en parte, está estrictamente prohibido y será perseguido con todo el rigor de la ley, pudiendo incurrir en graves sanciones civiles y penales.
 
-- Node.js 18.0+
-- pnpm 7.0+
+No se concede ninguna licencia explícita o implícita para copiar, modificar, distribuir o utilizar este software de ninguna manera sin el consentimiento previo, expreso y por escrito de Fluxo.
 
-### Instalación
+Fluxo® es una marca registrada. El uso no autorizado de la marca Fluxo o de cualquier material protegido por derechos de autor está prohibido.
 
-1. Clona el repositorio
-```bash
-git clone https://github.com/tuusuario/fluxo-landing-page.git
-cd fluxo-landing-page
-```
-
-2. Instala las dependencias
-```bash
-pnpm install
-```
-
-3. Crea un archivo `.env.local` en la raíz del proyecto basado en `.env.example`
-
-4. Configura las variables de entorno de Sanity:
-```
-NEXT_PUBLIC_SANITY_PROJECT_ID=tu-proyecto-id
-NEXT_PUBLIC_SANITY_DATASET=production
-NEXT_PUBLIC_SANITY_API_VERSION=2023-05-03
-```
-
-### Ejecución del Proyecto
-
-```bash
-pnpm dev
-```
-
-La aplicación estará disponible en `http://localhost:3000`.
-
-## Sanity CMS
-
-Este proyecto utiliza Sanity como sistema de gestión de contenidos headless para administrar los testimonios, características, planes de precios y artículos de blog.
-
-### Configuración de Sanity Studio
-
-1. Crea una cuenta en [Sanity.io](https://www.sanity.io/) si aún no tienes una.
-
-2. Crea un nuevo proyecto en Sanity y obtén tu Project ID.
-
-3. Accede al Studio incorporado en el proyecto visitando:
-```
-http://localhost:3000/admin
-```
-
-4. Inicia sesión con tu cuenta de Sanity para comenzar a gestionar el contenido.
-
-### Esquemas de Contenido
-
-El CMS incluye los siguientes tipos de contenido:
-
-- **Testimonios**: Opiniones de clientes sobre la plataforma.
-- **Características**: Funcionalidades destacadas de Fluxo.
-- **Planes de Precios**: Diferentes opciones de suscripción.
-- **Blog**: Artículos del blog con categorías y autores.
-
-### Publicación de Contenido
-
-1. Accede al Studio de Sanity `/admin`
-2. Crea o edita el contenido según sea necesario
-3. Publica los cambios con el botón "Publish"
-4. Los cambios se reflejarán automáticamente en la landing page
-
-## Estructura del Proyecto
-
-```
-├── app/              # Rutas y páginas (Next.js App Router)
-├── components/       # Componentes React
-├── hooks/            # Hooks personalizados
-├── lib/              # Utilidades y configuración
-├── public/           # Archivos estáticos
-├── sanity/           # Configuración de Sanity CMS
-│   └── schemas/      # Esquemas de contenido
-└── utils/            # Funciones de utilidad
-```
-
-## Personalización
-
-### Tema y Colores
-
-Los colores principales pueden modificarse en:
-- `tailwind.config.ts` - Configuración general de Tailwind
-- `app/globals.css` - Variables CSS y estilos globales
-
-### Contenido
-
-Todo el contenido dinámico se gestiona mediante Sanity CMS, accesible desde:
-- `/admin` - Studio de Sanity para gestión de contenido
+Para consultas sobre licencias o permisos, por favor contacte directamente con Fluxo.
 
 ## Autor
 
 Fluxo Team
-
-## Licencia
-
-Este proyecto está bajo la licencia MIT. 
