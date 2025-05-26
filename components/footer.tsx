@@ -1,4 +1,10 @@
 import Link from "next/link"
+import { 
+  Linkedin, 
+  Youtube, 
+  Instagram, 
+  Facebook 
+} from "lucide-react"
 
 const footerLinks = {
   Producto: [
@@ -18,6 +24,34 @@ const footerLinks = {
     { name: "Términos y Condiciones", href: "/terminos-condiciones", description: "Todo lo que necesitas saber" },
   ],
 }
+
+// Iconos de redes sociales con sus respectivas URLs desde variables de entorno
+const socialMedia = [
+  { 
+    name: "LinkedIn", 
+    icon: Linkedin, 
+    url: process.env.NEXT_PUBLIC_LINKEDIN_URL || "https://linkedin.com/company/fluxo",
+    color: "hover:bg-[#0077B5]" 
+  },
+  { 
+    name: "YouTube", 
+    icon: Youtube, 
+    url: process.env.NEXT_PUBLIC_YOUTUBE_URL || "https://youtube.com/@fluxoteam",
+    color: "hover:bg-[#FF0000]" 
+  },
+  { 
+    name: "Instagram", 
+    icon: Instagram, 
+    url: process.env.NEXT_PUBLIC_INSTAGRAM_URL || "https://instagram.com/fluxoapp",
+    color: "hover:bg-[#E1306C]" 
+  },
+  { 
+    name: "Facebook", 
+    icon: Facebook, 
+    url: process.env.NEXT_PUBLIC_FACEBOOK_URL || "https://facebook.com/fluxoapp",
+    color: "hover:bg-[#1877F2]" 
+  },
+]
 
 export function Footer() {
   return (
@@ -104,15 +138,35 @@ export function Footer() {
         </div>
 
         {/* Footer Bottom */}
-        <div className="mt-12 flex flex-col items-center justify-between border-t border-gray-100 pt-8 md:flex-row">
-          <div className="flex items-center space-x-2">
-            <Link href="/" className="text-[#1C64F2] hover:text-blue-600 font-semibold text-lg">
-              Fluxo
-            </Link>
+        <div className="mt-12 border-t border-gray-100 pt-8">
+          {/* Social Media Icons - Centered on Mobile, Left on Desktop */}
+          <div className="flex flex-col items-center md:flex-row md:justify-between">
+            <div className="flex items-center">
+              <Link href="/" className="text-[#1C64F2] hover:text-blue-600 font-semibold text-lg">
+                Fluxo
+              </Link>
+              
+              {/* Social Media Icons */}
+              <div className="flex items-center ml-6 space-x-3">
+                {socialMedia.map((social) => (
+                  <a 
+                    key={social.name}
+                    href={social.url}
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className={`flex items-center justify-center w-8 h-8 rounded-full bg-gray-100 text-gray-600 transition-all duration-300 ${social.color} hover:text-white`}
+                    aria-label={social.name}
+                  >
+                    <social.icon className="w-4 h-4" />
+                    <span className="sr-only">{social.name}</span>
+                  </a>
+                ))}
+              </div>
+            </div>
+            <p className="mt-4 text-xs sm:text-sm text-gray-500 md:mt-0">
+              © {new Date().getFullYear()} Fluxo, INC. Todos los derechos reservados.
+            </p>
           </div>
-          <p className="mt-4 text-xs sm:text-sm text-gray-500 md:mt-0">
-            © {new Date().getFullYear()} Fluxo, INC. Todos los derechos reservados.
-          </p>
         </div>
 
         {/* Logo Watermark */}
